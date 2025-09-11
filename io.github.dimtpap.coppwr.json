@@ -1,7 +1,7 @@
 {
 	"app-id": "io.github.dimtpap.coppwr",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "24.08",
+	"runtime-version": "25.08",
 	"sdk": "org.freedesktop.Sdk",
 	"sdk-extensions": [
 		"org.freedesktop.Sdk.Extension.rust-stable",
@@ -56,8 +56,8 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
-					"tag": "1.2.4",
-					"commit": "5695fda57c2f348dac5360b2fe5311abafc89f58"
+					"tag": "1.4.7",
+					"commit": "1c542e9a0ca4226c9befb08fe9c19170aca3ce95"
 				}
 			]
 		},
@@ -74,8 +74,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/dimtpap/coppwr/releases/download/1.6.2/coppwr-1.6.2-vendor.tar.gz",
-					"sha256": "e25172c3143dfa759ed5548692cb3d9995fe7519b2af5b8ee758b3936a2a64b7"
+					"url": "https://github.com/dimtpap/coppwr/releases/download/1.7.0/coppwr-1.7.0-vendor.tar.gz",
+					"sha256": "c251348206698766ec8b4f0fbb593421e89877eca682ceff3da43ac8a48fd02c"
 				}
 			]
 		}
