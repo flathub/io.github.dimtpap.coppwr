@@ -5,7 +5,7 @@
 	"sdk": "org.freedesktop.Sdk",
 	"sdk-extensions": [
 		"org.freedesktop.Sdk.Extension.rust-stable",
-		"org.freedesktop.Sdk.Extension.llvm20"
+		"org.freedesktop.Sdk.Extension.llvm21"
 	],
 	"command": "coppwr",
 	"finish-args": [
@@ -16,8 +16,8 @@
 		"--filesystem=xdg-run/pipewire-0"
 	],
 	"build-options": {
-		"append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin",
-		"prepend-ld-library-path": "/usr/lib/sdk/llvm20/lib"
+		"append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin",
+		"prepend-ld-library-path": "/usr/lib/sdk/llvm21/lib"
 	},
 	"modules": [
 		{
@@ -74,8 +74,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/dimtpap/coppwr/releases/download/1.7.0/coppwr-1.7.0-vendor.tar.gz",
-					"sha256": "c251348206698766ec8b4f0fbb593421e89877eca682ceff3da43ac8a48fd02c"
+					"url": "https://github.com/dimtpap/coppwr/releases/download/1.7.1/coppwr-1.7.1-vendor.tar.gz",
+					"sha256": "3ad7374e1cdd8dcc680cf9c61bcdf42eee4b49ed9eddf8c0aabdddb1558b4c1e"
 				}
 			]
 		}
