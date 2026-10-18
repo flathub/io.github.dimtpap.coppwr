@@ -1,11 +1,11 @@
 {
 	"app-id": "io.github.dimtpap.coppwr",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "25.08",
+	"runtime-version": "26.08",
 	"sdk": "org.freedesktop.Sdk",
 	"sdk-extensions": [
 		"org.freedesktop.Sdk.Extension.rust-stable",
-		"org.freedesktop.Sdk.Extension.llvm21"
+		"org.freedesktop.Sdk.Extension.llvm22"
 	],
 	"command": "coppwr",
 	"finish-args": [
@@ -16,8 +16,8 @@
 		"--filesystem=xdg-run/pipewire-0"
 	],
 	"build-options": {
-		"append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm21/bin",
-		"prepend-ld-library-path": "/usr/lib/sdk/llvm21/lib"
+		"append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm22/bin",
+		"prepend-ld-library-path": "/usr/lib/sdk/llvm22/lib"
 	},
 	"modules": [
 		{
@@ -33,7 +33,9 @@
 				"-Ddocs=disabled",
 				"-Dman=disabled",
 				"-Dlibcamera=disabled",
-				"-Dsystemd=disabled",
+				"-Dlibsystemd=disabled",
+				"-Dsystemd-user-service=disabled",
+				"-Dsystemd-system-service=disabled",
 				"-Dalsa=enabled",
 				"-Dpipewire-alsa=disabled",
 				"-Djack=enabled",
@@ -56,8 +58,8 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
-					"tag": "1.4.7",
-					"commit": "1c542e9a0ca4226c9befb08fe9c19170aca3ce95"
+					"tag": "1.6.8",
+					"commit": "b741e0c74f5436f0c925f7741140db0efd32cf4e"
 				}
 			]
 		},
